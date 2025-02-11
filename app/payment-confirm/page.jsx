@@ -7,7 +7,7 @@ function PaymentConfirmation() {
 
     const route=useRouter();
   return (
-    <div className='bg-[#f1f1f1] flex
+    <div className='bg-[#f1f1f1] text-black flex
     h-screen
     items-center justify-center flex-col'>
         <h2 className='text-[30px] z-20 mt-[-30px]'>Payment Confimed</h2>

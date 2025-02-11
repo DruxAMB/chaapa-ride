@@ -1,6 +1,6 @@
 "use client"
 import { useSearchParams } from 'next/navigation'
-import CheckoutForm from './../../components/Home/CheckoutForm'
+import CheckoutForm from '../../components/Home/CheckoutForm'
 import React from 'react'
 
 function Payment() {
@@ -8,7 +8,9 @@ function Payment() {
   const amount=searchParam.get('amount');
  
   return (
-    <div className='bg-white text-black p-2'>hello world</div>
+    <div className='bg-white text-black p-2'>
+      <button className='bg-black text-white p-2 rounded-lg'>Pay with Lisk</button>
+    </div>
   )
 }
 
