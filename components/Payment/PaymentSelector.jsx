@@ -39,7 +39,7 @@ const PaymentSelector = ({ amount, onPaymentComplete }) => {
 
   return (
     <div className="p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Select Payment Method</h2>
+      <h2 className="text-2xl font-bold mb-4 text-gray-900">Select Payment Method</h2>
       <div className="space-y-4">
         {cryptoOptions.map((option) => (
           <div
@@ -61,7 +61,7 @@ const PaymentSelector = ({ amount, onPaymentComplete }) => {
                 />
               </div>
               <div>
-                <h3 className="font-semibold">{option.name}</h3>
+                <h3 className="font-semibold text-gray-800">{option.name}</h3>
                 <p className="text-sm text-gray-600">{option.description}</p>
               </div>
             </div>
@@ -72,12 +72,12 @@ const PaymentSelector = ({ amount, onPaymentComplete }) => {
       <div className="mt-6">
         <div className="mb-4">
           <div className="text-sm text-gray-600">Amount to pay</div>
-          <div className="text-2xl font-bold">{amount} {selectedCrypto.toUpperCase()}</div>
+          <div className="text-2xl font-bold text-gray-500">{amount} {selectedCrypto.toUpperCase()}</div>
         </div>
 
         <button
           onClick={handlePayment}
-          className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          className="w-full bg-[#bd3839] text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
         >
           Pay with {selectedCrypto === 'lisk' ? 'Lisk' : 'Mantle'}
         </button>
