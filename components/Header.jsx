@@ -10,7 +10,7 @@ function Header() {
         {
             id:1,
             name:'Ride',
-            icon:'/taxi.jpeg'
+            icon:'/ride.jpeg'
         },
         {
             id:2,
